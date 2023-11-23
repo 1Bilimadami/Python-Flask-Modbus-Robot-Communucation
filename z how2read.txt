@@ -1,0 +1,81 @@
+    def read_coils(self, bit_addr, bit_nb=1):
+        """Modbus function READ_COILS (0x01).
+        :param bit_addr: bit address (0 to 65535)
+        :type bit_addr: int
+        :param bit_nb: number of bits to read (1 to 2000)
+        :type bit_nb: int
+        :returns: bits list or None if error
+        :rtype: list of bool or None
+        """
+    def read_discrete_inputs(self, bit_addr, bit_nb=1):
+        """Modbus function READ_DISCRETE_INPUTS (0x02).
+        :param bit_addr: bit address (0 to 65535)
+        :type bit_addr: int
+        :param bit_nb: number of bits to read (1 to 2000)
+        :type bit_nb: int
+        :returns: bits list or None if error
+        :rtype: list of bool or None
+        """
+    def read_holding_registers(self, reg_addr, reg_nb=1):
+        """Modbus function READ_HOLDING_REGISTERS (0x03).
+        :param reg_addr: register address (0 to 65535)
+        :type reg_addr: int
+        :param reg_nb: number of registers to read (1 to 125)
+        :type reg_nb: int
+        :returns: registers list or None if fail
+        :rtype: list of int or None
+        """
+
+    def read_input_registers(self, reg_addr, reg_nb=1):
+        """Modbus function READ_INPUT_REGISTERS (0x04).
+        :param reg_addr: register address (0 to 65535)
+        :type reg_addr: int
+        :param reg_nb: number of registers to read (1 to 125)
+        :type reg_nb: int
+        :returns: registers list or None if fail
+        :rtype: list of int or None
+        """
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+    def write_single_coil(self, bit_addr, bit_value):
+        """Modbus function WRITE_SINGLE_COIL (0x05).
+        :param bit_addr: bit address (0 to 65535)
+        :type bit_addr: int
+        :param bit_value: bit value to write
+        :type bit_value: bool
+        :returns: True if write ok
+        :rtype: bool
+        """
+
+        def write_single_register(self, reg_addr, reg_value):
+        """Modbus function WRITE_SINGLE_REGISTER (0x06).
+        :param reg_addr: register address (0 to 65535)
+        :type reg_addr: int
+        :param reg_value: register value to write
+        :type reg_value: int
+        :returns: True if write ok
+        :rtype: bool
+        """
+
+       def write_multiple_coils(self, bits_addr, bits_value):
+        """Modbus function WRITE_MULTIPLE_COILS (0x0F).
+        :param bits_addr: bits address (0 to 65535)
+        :type bits_addr: int
+        :param bits_value: bits values to write
+        :type bits_value: list
+        :returns: True if write ok
+        :rtype: bool
+        """
+
+    def write_multiple_registers(self, regs_addr, regs_value):
+        """Modbus function WRITE_MULTIPLE_REGISTERS (0x10).
+        :param regs_addr: registers address (0 to 65535)
+        :type regs_addr: int
+        :param regs_value: registers values to write
+        :type regs_value: list
+        :returns: True if write ok
+        :rtype: bool
+        """
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
